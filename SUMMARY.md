@@ -26,12 +26,10 @@
 
 ## Timelines
 
-* [Icons](timelines/icons.md)
-* [Buttons](timelines/buttons.md)
-* [Inputs](timelines/inputs.md)
+* [Tools Used](timelines/tools-used.md)
 
-## Summary
+## Copy of Summary
 
-* [Icons](summary/icons.md)
-* [Buttons](summary/buttons.md)
-* [Inputs](summary/inputs.md)
+* [Icons](copy-of-summary/icons.md)
+* [Buttons](copy-of-summary/buttons.md)
+* [Inputs](copy-of-summary/inputs.md)
