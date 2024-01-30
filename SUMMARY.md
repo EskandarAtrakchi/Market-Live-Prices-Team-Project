@@ -30,4 +30,4 @@
 
 ## Summary
 
-* [Inputs](summary/inputs.md)
+* [Summary](summary/summary.md)
