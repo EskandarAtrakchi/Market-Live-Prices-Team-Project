@@ -28,8 +28,6 @@
 
 * [Tools Used](timelines/tools-used.md)
 
-## Copy of Summary
+## Summary
 
-* [Icons](copy-of-summary/icons.md)
-* [Buttons](copy-of-summary/buttons.md)
-* [Inputs](copy-of-summary/inputs.md)
+* [Inputs](summary/inputs.md)
