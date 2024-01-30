@@ -22,9 +22,7 @@
 * [Inputs](mock-ups/inputs.md)
 * [Colors](mock-ups/colors.md)
 * [Typography](mock-ups/typography.md)
-* [Icons](mock-ups/icons-1.md)
-* [Buttons](mock-ups/buttons-1.md)
-* [Inputs](mock-ups/inputs-1.md)
+* [Mock-Ups Sketchings](mock-ups/mock-ups-sketchings.md)
 
 ## Timelines
 
