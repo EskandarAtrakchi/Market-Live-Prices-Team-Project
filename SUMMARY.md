@@ -17,12 +17,12 @@
 
 ## Mock-Ups
 
+* [Mock-Ups Sketchings](mock-ups/mock-ups-sketchings.md)
 * [Icons](mock-ups/icons.md)
 * [Buttons](mock-ups/buttons.md)
 * [Inputs](mock-ups/inputs.md)
 * [Colors](mock-ups/colors.md)
 * [Typography](mock-ups/typography.md)
-* [Mock-Ups Sketchings](mock-ups/mock-ups-sketchings.md)
 
 ## Timelines
 
