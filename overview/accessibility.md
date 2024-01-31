@@ -13,3 +13,5 @@ Accessibility means that people can do what they need to do in a similar amount 
 Here at our product we comply to all levels of accessibility, to put it in a different words all people from anywhere on earth can access our website and make use of the services that we provide.
 {% endtab %}
 {% endtabs %}
+
+Our project is different than what exists in the market as it should provide more services, all in one product.
