@@ -14,4 +14,6 @@ Here at our product we comply to all levels of accessibility, to put it in a dif
 {% endtab %}
 {% endtabs %}
 
-Our project is different than what exists in the market as it should provide more services, all in one product.
+Our project is different than what exists in the market as it should provide more services, all in one product for different people with different disabilities such as blid color people.
+
+We have explain what color and what resources we will use in [Mock-Ups section](https://eskandar-atrakchi.gitbook.io/team-project-proposal/mock-ups/icons).
