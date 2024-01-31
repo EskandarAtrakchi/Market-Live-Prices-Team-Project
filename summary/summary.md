@@ -1,5 +1,7 @@
-# Inputs
+# Summary
 
-In coclusion, the website is accessible online by anyone who is interested about the crypto market, prices, volume, market cap, and the fear and greed index of the whole crypto market. The website will be built using HTML, CSS, and JavaScript, the website will use Node.js for server-side JavaScript code execution, Express.js is to handle the routes and to respond to different endpoints, axios is to make HTTP requests to external APIs, and CORS  used to enable cross-origin sharing, using this to allow the server to handle requests from different origins. Chart.js to generate the charts and the charts are generated based on the user input, providing a clean and interactive way to represent data.&#x20;
+In conclusion, the website is accessible online by anyone interested in the crypto market, prices, volume, market cap, and the fear and greed index of the whole crypto market.&#x20;
 
-The designing and CSS styling of the page will be implemented from ready libraries that are useful and time saving. The separation of JavaScript methods that putting one file named backendAPI.js that only focuses on retrieving the data and displaying them to the user with bar chart using Chart.js, and the other is main.js is for the front-end mainly and any other requirements that are not related to APIs, all this to make our website more user friendly and make the user spends more time on the website.
+Dynamic charts and interactive will be used so the user can check the old data of a specific coin or token, this functionality will make people spend more time on the website.
+
+Chat terminals will be useful for people to chat, give their opinions about the crypto market, and read other people's opinions, this will create engagement on the website.
