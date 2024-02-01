@@ -18,5 +18,7 @@ This is the timeline constrains and we will follow accordingly.
 
 <figure><img src="../.gitbook/assets/Group Project 20240130.png" alt=""><figcaption><p>Time line of the project </p></figcaption></figure>
 
-
+{% embed url="https://www.onlinegantt.com/#/gantt" %}
+We used this tool to document our time
+{% endembed %}
 
