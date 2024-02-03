@@ -6,7 +6,7 @@
 
 * [Brand Guidelines](overview/brand-guidelines.md)
 * [Accessibility](overview/accessibility.md)
-* [Page](overview/page.md)
+* [Overview Sketch Pad Idea ](overview/overview-sketch-pad-idea.md)
 
 ## Target Group
 
