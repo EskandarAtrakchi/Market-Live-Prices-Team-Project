@@ -6,10 +6,11 @@
 
 * [Brand Guidelines](overview/brand-guidelines.md)
 * [Accessibility](overview/accessibility.md)
+* [Page](overview/page.md)
 
 ## Target Group
 
-* [Our Audience ](target-group/our-audience.md)
+* [Our Audience](target-group/our-audience.md)
 
 ## Functionality
 
