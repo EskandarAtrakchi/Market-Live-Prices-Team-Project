@@ -18,6 +18,8 @@ Crypto Coins: Coins function as a form of money
 
 Crypto Tokens: can be used for a variety of purposes
 
+NFA: Not a Financial Advice
+
 {% hint style="info" %}
 Each cryptocurrency has its own acronym, for example BTC stands for Bitcoin, ETH stands for Ethereum and so on knowing that there are cryptocurrencies being created on daily bases, that means there are alot of cryptocurrencies as of June 2023, there are almost 26,000 cryptocurrencies publicly traded [forbes.com](https://www.forbes.com/advisor/au/investing/cryptocurrency/different-types-of-cryptocurrencies-explained/)
 {% endhint %}
