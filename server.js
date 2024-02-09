@@ -1,3 +1,7 @@
+//this server is not compatible with the GitHub pages deployment, so I will use the server.js file to deploy the app on Heroku.
+// this server missing socket.io 
+// more implementations for the server should be added to config message sending mechanism and recieving mechanism
+
 /*
 express handles routes for different endpoints ("/", "/ticker", "/listings", "/documentation").
 It enables the server to respond with JSON data and handle external API requests using Axios.
