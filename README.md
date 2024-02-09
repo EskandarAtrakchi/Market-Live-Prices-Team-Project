@@ -13,4 +13,4 @@ The other purpose is that the users can do the following:
 2. read other people's opinions&#x20;
 3. have real-time chats and engagements&#x20;
 
-The intended customers who are interested in crypto market as&#x20;
+The intended customers who are interested in crypto market as...
