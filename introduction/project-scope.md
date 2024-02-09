@@ -1,11 +1,10 @@
 # Project Scope
 
-for people to check the prices of the cryptocurrencies, the ID number of the cryptocurrency, symbol of the currency, price (US-Dollar), 24 h volume (US-Dollar), Market Capitalization (US-Dollar), Percent Change (1h), Percent Change (24h), and Percent Change (7d).
+The aim is to create a user friendly website for people to check the prices of the cryptocurrencies, the ID number of the cryptocurrency, symbol of the currency, price (US-Dollar), 24 h volume (US-Dollar), Market Capitalization (US-Dollar), Percent Change (1h), Percent Change (24h), and Percent Change (7d).
 
 Users can know the fear and greed in the market&#x20;
 
-Greed = majority of the crypto coins/tokens are going up in value\
-Fear = majority of the crypto coins/tokens are going down in value&#x20;
+<mark style="color:green;">**Greed = majority of the crypto coins/tokens are going up in value**</mark>\ <mark style="color:green;">**Fear = majority of the crypto coins/tokens are going down in value**</mark>&#x20;
 
 The other purpose is that the users can do the following:
 
