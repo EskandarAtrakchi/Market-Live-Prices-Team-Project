@@ -1,10 +1,7 @@
-/**
- * establishing a Socket.IO connection to a server running at http://localhost:8000. 
- * selecting various HTML elements (body, chatBox, onUsers, messageContainer, form, and messageInput) 
- * for manipulation in the document. It prompting the user to enter their name and stores it in the 'name' variable.
- */
+//establishing a Socket.IO connection to a server running at http://localhost:8000.
 const socket = io('http://localhost:8000');
 
+//selecting various HTML elements (body, chatBox, onUsers, messageContainer, form, and messageInput) for manipulation in the document.
 const body = document.querySelector('.container');
 const chatBox = document.getElementById('chatContainer');
 const onUsers = document.getElementById('onUsers');
@@ -12,22 +9,21 @@ const messageContainer = document.getElementById('chatting')
 const form = document.getElementById('messageForm');
 const messageInput = document.getElementById('messageInput');
 
+//prompting the user to enter their name and stores it in the 'name' variable.
 const name = prompt('Enter your name to Join');
 
-/**
-checking if the entered name is either null or has a length less than or equal to 3 characters. 
-If true, it creates an h1 element with a message indicating denied access, removeing the chatBox from the document, appends the h1 element to the body, 
-and displays an alert saying 'Access Denied'. 
-If the name is valid, it alerts 'Access Granted' and emits a 'new-user-joined' event with the user's name using the established Socket.IO connection.
-*/
+//checking if the entered name is either null or has a length less than or equal to 3 characters. 
 if (name === null || name.length <= 3) {
+    //it creates an h1 element with a message indicating denied access, removeing the chatBox from the document, appends the h1 element to the body
     const h1Element = document.createElement('h1');
     h1Element.classList.add('noAccess');
     h1Element.innerText = 'Sorry, You are not Allowed to access the chat room. Please try again with a valid name.';
     chatBox.remove();
     body.append(h1Element);
+    //alert saying 'Access Denied'. 
     alert('Access Denied');
 } else {
+    //'Access Granted' and emits a 'new-user-joined' event with the user's name using the established Socket.IO connection.
     alert('Access Granted');
     socket.emit('new-user-joined', name)
 }
