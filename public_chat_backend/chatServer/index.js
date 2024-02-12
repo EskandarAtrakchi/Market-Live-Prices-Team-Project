@@ -1,5 +1,9 @@
 /**
- * This code sets up a Socket.IO server on port 8000 with CORS allowing all origins. It tracks online users, emits an 'userIncrement' event on connection, handles new user joining ('new-user-joined' event), and broadcasts messages ('send' event) along with handling likes ('liked' event). It also handles disconnections ('disconnect' event) by updating online user count and broadcasting 'disconnected' event.
+ * This code sets up a Socket.IO server on port 8000 with CORS allowing all origins. 
+ * It tracks online users, emits an 'userIncrement' event on connection, 
+ * handles new user joining ('new-user-joined' event), and broadcasts messages ('send' event) 
+ * along with handling likes ('liked' event). It also handles disconnections ('disconnect' event) 
+ * by updating online user count and broadcasting 'disconnected' event.
 */
 const io = require('socket.io')(8000, { cors: { origin: "*" } });
 
