@@ -30,6 +30,4 @@ io.on('connection', socket => {
         socket.broadcast.emit('disconnected', { name: users[socket.id], onUsers: onlineUsers })
         delete users[socket.id]
     })
-
-
 })
