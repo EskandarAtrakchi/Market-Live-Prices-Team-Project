@@ -20,64 +20,53 @@ After the user view the website the user can submit their feedback as the follow
 
 Scope
 
-The scope of this use case is to …….
+The scope of this use case is to provide feedback mechanism for the users to keep developing the system for better user experience and future system evolution.
 
 Description
 
-This use case describes the ………..
+This use case describes the process of collecting and processing feedback from users regarding a particular feature or functionality within the system.
 
 Flow Description
 
 Precondition
 
-The system is in initialisation mode……..
+The system is in initialization mode, ready to receive feedback from users.
 
 Activation
 
-This use case starts when an \<Actor>…………
+This use case starts when a user (referred to as an Actor ) initiates the feedback process.
 
 Main flow
 
-1\.    The system identifies the ………….
-
-2\.    The \<Actor> …………...(See A1)
-
-3\.    The system …………..(See E1)
-
-4\.    The \<Actor> ………….
+1. The system identifies the specific area or feature for which feedback is being provided.
+2. The \<Actor> shares their feedback and provides relevant details. (See A1)
+3. The system processes the feedback, recording relevant information for analysis.
+4. The \<Actor> receives acknowledgment or confirmation of their submitted feedback.
 
 Alternate flow
 
-A1 : \<title of A1>
-
-1\.    The system …………..
-
-2\.    The \<Actor> ………….
-
-3\.    The use case continues at position 3 of the main flow
+1. The system encounters a specific condition in which additional steps are required.
+2. The \<Actor> follows the specified steps to address the condition.
+3. The use case continues at position 3 of the main flow.
 
 &#x20;
 
 Exceptional flow
 
-E1 : \<title of E1>
-
-4\.    The system …………..
-
-5\.    The \<Actor> ………….
-
-6\.    The use case continues at position 4 of the main flow
+1. The system encounters an exceptional condition that requires special handling.
+2. The \<Actor> follows the prescribed steps to resolve the exceptional condition.
+3. The use case continues at position 4 of the main flow.
 
 &#x20;
 
 Termination
 
-The system presents the next ……….
+The system presents the next steps or information relevant to the feedback process to terminate.
 
 &#x20;
 
 Post condition
 
-The system goes into a wait state &#x20;
+The system transitions into a wait state, ready to receive further feedback.
 
 <figure><img src="../../.gitbook/assets/WhatsApp Image 2024-02-12 at 22.29.20.jpeg" alt=""><figcaption></figcaption></figure>
