@@ -1,23 +1,44 @@
 # Non-Functional Requirements
 
-#### 1.1.1  Performance/Response time requirement
+Performance/Response time requirement
 
-#### 1.1.2  Availability requirement
+The product is available for use all the time, the feedback system, for example, must maintain a minimum availability of 99.9%, allowing users to submit feedback at any time without significant downtime.
 
-#### 1.1.3  Recover requirement
+#### Availability requirement
 
-#### 1.1.4  Robustness requirement
 
-#### 1.1.5  Security requirement
 
-#### 1.1.6  Reliability requirement
+#### Recover requirement
 
-#### 1.1.7  Maintainability requirement
 
-#### 1.1.8  Portability requirement
 
-#### 1.1.9  Extendibility requirement
+#### Robustness requirement
 
-#### 1.1.10       Reusability requirement
 
-#### 1.1.11       Resource utilization requirement
+
+#### Security requirement
+
+
+
+#### Reliability requirement
+
+
+
+#### Maintainability requirement
+
+
+
+#### Portability requirement
+
+
+
+#### Extendibility requirement
+
+
+
+#### Reusability requirement
+
+
+
+#### Resource utilization requirement
+
