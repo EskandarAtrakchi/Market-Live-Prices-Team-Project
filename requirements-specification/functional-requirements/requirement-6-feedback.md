@@ -63,10 +63,19 @@ Termination
 
 The system presents the next steps or information relevant to the feedback process to terminate.
 
-&#x20;
+
 
 Post condition
 
 The system transitions into a wait state, ready to receive further feedback.
+
+
+
+{% hint style="info" %}
+1. The feedback system should provide a user-friendly interface for input.
+2. The system able to capture files and include them with the submission&#x20;
+3. Feedback of the users will be stored for future system evolution
+4. The acknowledgment to the user may include a reference number for tracking purposes.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/WhatsApp Image 2024-02-12 at 22.29.20.jpeg" alt=""><figcaption></figcaption></figure>
