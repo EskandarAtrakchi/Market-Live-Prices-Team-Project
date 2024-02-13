@@ -1,8 +1,10 @@
 # Non-Functional Requirements
 
-Performance/Response time requirement
-
 Non-Functional Requirements mostly for the back-end devs to deal with and in communicate with front-end devs if anything is needed.
+
+Here are what is needed for our project for now:
+
+Performance/Response time requirement
 
 <table data-full-width="false"><thead><tr><th>Components</th><th>Explanation</th></tr></thead><tbody><tr><td><p>Node.js, Express.js</p><p></p></td><td>Node.js and express.js used because of their high performance capabilities and they can handle requests in a very efficient way.</td></tr><tr><td><p>Axios.js</p><p></p></td><td>Axios.js is used for making HTTP requests and can contribute to optimizing response times.</td></tr><tr><td>Socket.js</td><td>Socket.js can enhance real-time communication performance.</td></tr></tbody></table>
 
