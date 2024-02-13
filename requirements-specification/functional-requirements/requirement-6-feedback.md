@@ -1,12 +1,22 @@
 # Requirement 6: Feedback
 
-**1.1.1.1   Description & Priority**
+**Description & Priority**
 
-A description of the requirement and its priority. Describes how essential this requirement is to the overall system.
+Feedback mechanism is very important for us to meet the user experience and for system evolution in the future to add more functionalities to the website, feedback will release the product potential.
 
-**1.1.1.2   Use Case**
+The environment that we are working on is volatile especially dealing with crypto currencies, attention to user feedback is important, priority assessment is high.
 
-Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind.
+**Use Case**
+
+After the user view the website the user can submit their feedback as the following:
+
+1. The user can select the section that they want to submit their feedback form for and the sections are:\
+   Accessibility, real-time prices, chats, and crypto IDs
+2. Satisfaction level: there are three levels scale and they are:\
+   very high, medium, and very low
+3. Attach file: if the user wants to attach file from their local device, for example the user can take a screenshot for the meant part and submit it with their feedback process.
+4. Subject: the user can write a message if they want to.
+5. The team will receive the feedback that was submitted by the user to develop the product accordingly.
 
 Scope
 
