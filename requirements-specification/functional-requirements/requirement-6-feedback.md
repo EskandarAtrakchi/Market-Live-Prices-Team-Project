@@ -76,3 +76,6 @@ The system transitions into a wait state, ready to receive further feedback.
 3. Feedback of the users will be stored for future system evolution
 4. The acknowledgment to the user may include a reference number for tracking purposes.
 
+
+
+<figure><img src="../../.gitbook/assets/WhatsApp Image 2024-02-12 at 22.29.18.jpeg" alt=""><figcaption></figcaption></figure>
