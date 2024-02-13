@@ -17,6 +17,7 @@
     * [Requirement 3: Fear and Greed index](requirements-specification/functional-requirements/requirement-3-fear-and-greed-index.md)
     * [Requirement 4: Crypto Bubble implementation](requirements-specification/functional-requirements/requirement-4-crypto-bubble-implementation.md)
     * [Requirement 5: Chat](requirements-specification/functional-requirements/requirement-5-chat.md)
+    * [Requirement 6: Feedback](requirements-specification/functional-requirements/requirement-6-feedback.md)
   * [Non-Functional Requirements](requirements-specification/non-functional-requirements.md)
 * [GUI](gui.md)
 * [System Architecture](system-architecture.md)
