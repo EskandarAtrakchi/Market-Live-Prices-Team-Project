@@ -78,4 +78,4 @@ The system transitions into a wait state, ready to receive further feedback.
 
 
 
-<figure><img src="../../../.gitbook/assets/usecase diagram.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/WhatsApp Image 2024-02-14 at 17.36.19.jpeg" alt=""><figcaption><p>Feedback</p></figcaption></figure>
