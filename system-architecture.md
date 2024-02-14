@@ -8,4 +8,4 @@ Provide a high-level architecture diagram to illustrate how the different parts/
 
 
 
-<figure><img src=".gitbook/assets/learn-architecture.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/learn-architecture (1).jpg" alt=""><figcaption></figcaption></figure>
