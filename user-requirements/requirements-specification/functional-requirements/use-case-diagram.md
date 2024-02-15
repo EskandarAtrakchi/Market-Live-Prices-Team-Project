@@ -1,8 +1,8 @@
 # Use Case Diagram
 
+<figure><img src="../../../.gitbook/assets/Screenshot (668).png" alt=""><figcaption><p>Overall system abstract</p></figcaption></figure>
 
 
-<figure><img src="../../../.gitbook/assets/Screenshot (583).png" alt=""><figcaption><p>Overall system diagram</p></figcaption></figure>
 
 
 
