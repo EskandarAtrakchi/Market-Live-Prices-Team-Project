@@ -1,71 +1,46 @@
 # Requirement 1: Price retrieval
 
-**1.1.1.1   Description & Priority**
+&#x20;
 
-A description of the requirement and its priority. Describes how essential this requirement is to the overall system.
+1.1 Description
 
-**1.1.1.2   Use Case**
+Searching crypto data and prices: user will be able to search the cryptocurrency by searching the name of the crypto, and if they user input the correct name of the currency the system will display the crypto data.
 
-Each requirement should be uniquely identified with a sequence number or a meaningful tag of some kind.
+#### 1.2  Use Case
 
-Scope
+Scope: The scope of this use case is to enable users to retrieve cryptocurrency data and prices through a search functionality.
 
-The scope of this use case is to …….
+Description: This use case describes how users can search for cryptocurrency data and prices by entering the name of the cryptocurrency they are interested in. The system will then display the relevant data for the searched cryptocurrency.
 
-Description
+Flow Description Precondition:  The system is initialized and has access to real-time cryptocurrency data.
 
-This use case describes the ………..
+Activation: This use case starts when a user triggers the search functionality by entering the name of a cryptocurrency.
 
-Flow Description
+Main Flow
 
-Precondition
-
-The system is in initialisation mode……..
-
-Activation
-
-This use case starts when an \<Actor>…………
-
-Main flow
-
-1\.    The system identifies the ………….
-
-2\.    The \<Actor> …………...(See A1)
-
-3\.    The system …………..(See E1)
-
-4\.    The \<Actor> ………….
-
-Alternate flow
-
-A1 : \<title of A1>
-
-1\.    The system …………..
-
-2\.    The \<Actor> ………….
-
-3\.    The use case continues at position 3 of the main flow
+1. The system identifies the user's input as a search query for cryptocurrency data.
+2. The system validates the user's input to ensure it matches the name of an existing cryptocurrency.
+3. If the user input matches the name of a cryptocurrency:
+4.
+   * The system retrieves the relevant data and prices for the searched cryptocurrency.
+   * The system displays the cryptocurrency data to the user.
 
 &#x20;
 
-Exceptional flow
+Alternate Flow A1: If the user input does not match the name of any existing cryptocurrency:
 
-E1 : \<title of E1>
+1. The system notifies the user that the entered cryptocurrency name is not recognized.
+2. The system prompts the user to enter a valid cryptocurrency name.
+3. The use case continues at position 2 of the main flow.
 
-4\.    The system …………..
+Exceptional flow E1: If there is an error retrieving cryptocurrency data:
 
-5\.    The \<Actor> ………….
-
-6\.    The use case continues at position 4 of the main flow
-
-&#x20;
-
-Termination
-
-The system presents the next ……….
+4. The system displays an error message indicating that cryptocurrency data could not be retrieved.
+5. The system prompts the user to try again later or contact support for assistance.
+6. The use case continues at position 2 of the main flow.
 
 &#x20;
 
-Post condition
+&#x20;
 
-The system goes into a wait state &#x20;
+&#x20;
