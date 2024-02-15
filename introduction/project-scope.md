@@ -21,3 +21,5 @@ The intended customers who are people who
 5. want to share their own opinion on the market&#x20;
 6. want to do real time chats regarding the crypto currencies coins/tokens&#x20;
 7. are interested in the fear and greed index for the whole crypto market&#x20;
+
+The project scope encompasses the development of a user-friendly website that allows users to track real-time prices of various cryptocurrencies. The website will provide essential information, including current prices in US dollars, 24-hour trading volume, market capitalization, and percentage changes over 1 hour, 24 hours, and 7 days. The scope further includes accommodating a diverse user base, including individual investors, traders, developers, businesses, and those involved in global transactions. This section also details any constraints that were placed upon the requirements elicitation process, such as schedules, costs, or the software engineering environment used to develop requirements.
