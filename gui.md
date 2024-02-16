@@ -1,11 +1,5 @@
 # GUI
 
-Include mock-ups of the key pages or stages of the system. Explain how they are linked. Explain how you addressed above requirements in the design. It is important that the mock-ups are in line with the functional requirements above, e.g., if one of your requirements is “user registration” then one of the screens listed in this section should show a registration page.
-
-
-
-
-
-
+The navbar is to route the user to other pages, we will include nice footer for the user that includes useful links so that the user can get more information about the markets, all pages are linked as the user can chat about crypto currencies, check the market status or specific currency, chats, and send categorized feedback.
 
 <figure><img src=".gitbook/assets/Screenshot (661).png" alt=""><figcaption><p>Feedback page</p></figcaption></figure>

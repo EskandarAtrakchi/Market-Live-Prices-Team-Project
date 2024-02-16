@@ -2,9 +2,9 @@
 
 **Description & Priority**
 
-Feedback mechanism is very important for us to meet the user experience and for system evolution in the future to add more functionalities to the website, feedback will release the product potential.
+Priority is the lowest however, Feedback mechanism is very important for us to meet the user experience and for system evolution in the future to add more functionalities to the website, feedback will release the product potential if the feedbacks taken seriously.
 
-The environment that we are working on is volatile especially dealing with crypto currencies, attention to user feedback is important, priority assessment is high.
+The environment that we are working on is volatile especially dealing with crypto currencies, attention to user feedback is important.
 
 **Use Case**
 
