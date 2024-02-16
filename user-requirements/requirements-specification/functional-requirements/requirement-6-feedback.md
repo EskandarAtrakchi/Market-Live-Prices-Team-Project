@@ -75,7 +75,3 @@ The system transitions into a wait state, ready to receive further feedback.
 2. The system able to capture files and include them with the submission&#x20;
 3. Feedback of the users will be stored for future system evolution
 4. The acknowledgment to the user may include a reference number for tracking purposes.
-
-
-
-<figure><img src="../../../.gitbook/assets/WhatsApp Image 2024-02-14 at 17.36.19.jpeg" alt=""><figcaption><p>Feedback</p></figcaption></figure>
