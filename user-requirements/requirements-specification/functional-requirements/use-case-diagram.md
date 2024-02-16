@@ -6,17 +6,17 @@
 
 <figure><img src="../../../.gitbook/assets/Screenshot (669).png" alt=""><figcaption><p>Eskandar Use case Diagram</p></figcaption></figure>
 
-Viewing the website: after the user interacts with the product, they can submit their feedback form.
+1\.     Viewing the website: after the user interacts with the product, they can submit their feedback form.
 
-Filling feedback form: the user will be prompt to a form to fill and submit, with in the form the user must choose one of the following categories: Accessibility, Real-time Prices, Chats, and Crypto IDs
+2\.     Filling feedback form: the user will be prompt to a form to fill and submit, with in the form the user must choose one of the following categories: Accessibility, Real-time Prices, Chats, and Crypto IDs
 
-Message/subject: to fill out a message attached with the feedback.
+3\.     Message/subject: to fill out a message attached with the feedback.
 
-Satisfaction level: the user can select very high, medium, or very low.
+4\.     Satisfaction level: the user can select very high, medium, or very low.
 
-Attach file: the user will be able to to select a file from their local storage
+5\.     Attach file: the user will be able to to select a file from their local storage
 
-Submit: the user will submit their feedback and an acknowledgement will be sent
+6\.     Submit: the user will submit their feedback and an acknowledgement will be sent
 
 
 
