@@ -15,20 +15,13 @@ It allows the Express server to handle requests coming from different origins (d
 This is essential for web applications, as browsers typically enforce the same-origin policy, restricting requests to the same domain. CORS middleware helps relax these restrictions.
 */
 const cors = require('cors');
-const http = require('http');
-const { Server } = require('socket.io');
-
 const app = express();
-const server = http.createServer(app);
-//Socket.IO server on port 8000 with CORS allowing all origins
-const io = new Server(server, { cors: { origin: "*" } });
-
-//previous port number is const port = 3000; I changed this in case if 3000 is busy during backend deploymenet 
-const port = process.env.PORT || 3000;
+//previous port number is const port = 3000; I changed this to apply on GitHub pages deployment 
+const port = process.env.PORT || 3000;// new port set up according to the environment variable if it exists.
 
 app.use(express.json());
 app.use(cors());
-
+ 
 //route number one index 
 app.get('/', (req, res) => {
     //just to see if the server is running
@@ -78,33 +71,8 @@ app.get('/documentation', async (req, res) => {
     }
 });
 
-const users = {};
-let onlineUsers = 0;
-
-io.on('connection', socket => {
-    onlineUsers = onlineUsers + 1;
-    socket.emit('userIncrement', onlineUsers);
-
-    socket.on('new-user-joined', name => {
-        users[socket.id] = name;
-        socket.broadcast.emit('user-joined', { name: users[socket.id], onUsers: onlineUsers })
-    })
-
-    socket.on('send', data => {
-        socket.broadcast.emit('receive', { message: data.message, name: users[socket.id], id: data.id })
-    })
-
-    socket.on('liked', id => {
-        socket.broadcast.emit('msg-like', id)
-    })
-
-    socket.on('disconnect', () => {
-        onlineUsers = onlineUsers - 1;
-        socket.broadcast.emit('disconnected', { name: users[socket.id], onUsers: onlineUsers })
-        delete users[socket.id]
-    })
-});
-
-server.listen(port, () => {
+//app listener 
+app.listen(port, () => {
+    //make sure tha the server is running properly on port 3000
     console.log(`Server is running on port ${port}`);
 });
