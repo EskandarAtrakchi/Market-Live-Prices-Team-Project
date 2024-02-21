@@ -57,6 +57,13 @@ app.get('/listings', async (req, res) => {
     }
 });
 
+//route number four feedback page 
+app.get('/feedback', (req, res) => {
+    //just to see if the server is running
+    res.json({ message: 'tested! feedback is working.' });
+    console.log(res.json());
+});
+
 //app listener 
 app.listen(port, () => {
     //make sure tha the server is running properly on port 3000
