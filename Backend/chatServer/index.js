@@ -1,5 +1,5 @@
 //Socket.IO server on port 8000 with CORS allowing all origins
-// socket.io is a library that enables real-time, bidirectional and event-based communication between the browser and the server.
+// socket.io is a library that enables real-time
 // cors allows all origins to connect to the server
 const io = require('socket.io')(8000, { cors: { origin: "*" } });
 
