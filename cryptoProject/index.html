@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chart.js Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <input type="text" id="coinSymbol" placeholder="Enter coin symbol">
+    <button id="fetchData">Fetch Data</button>
+
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be inserted here -->
+        </tbody>
+    </table>
+
+    <canvas id="barChart"></canvas>
+
+    <!-- Move your script tag here -->
+    <script src="fetch.js"></script>
+</body>
+
+</html>
