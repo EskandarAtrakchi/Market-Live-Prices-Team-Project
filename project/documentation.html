@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- for the tabe icon -->
+    <link rel="website icon" href="https://cliply.co/wp-content/uploads/2021/02/372102230_BITCOIN_400px.gif" />
+    <!--linking the css styling sheet here -->
+    <link rel="stylesheet" href="style.css" /> <!-- linking the main.js here -->
+    <script src="main.js"></script>
+    <title>Documentation Page</title>
+</head>
+
+<body onload="checkingInternetStatus ()"> <img src="https://cliply.co/wp-content/uploads/2021/02/372102230_BITCOIN_400px.gif" class="logo" alt="Logo" /> <input type="checkbox" name="checkbox" class="switch" id="darkModeCheckbox" />
+    <script>
+        // Check if dark mode is enabled and apply the appropriate styles
+        var darkModeEnabled = false;
+        if (darkModeEnabled) {
+            applyLightMode();
+        } else {
+            applyDarkMode();
+        }
+        // Add an event listener to the checkbox to call the toggleDarkMode function when it's clicked
+        document.getElementById("darkModeCheckbox").addEventListener("click", toggleDarkMode);
+    </script> <!-- marquee here -->
+    <marquee>Discover Innovation Unfolding – Where Real Time Prices Meets The Financial Technology!</marquee> <!-- I will use div to create a simple space -->
+    <div style="padding-bottom: 0.009%;"></div> <!-- nav bar here -->
+    <div class="topnav"> <a href="index.html">Home</a> <a href="listings.html">Listings</a> <a href="ticker.html">Ticker</a> <a href="documentation.html" class="split" id="active">Documentation</a> </div>
+    <!--Content here -->
+    <div style="padding-left:5%;">
+        <section>
+            <h1>Introduction</h1>
+            <p>This project is done fully by Eskandar Atrakchi and now I want to dive in-depth into explaining how this website works, the purpose of the website, and the technology used, I will do that by providing a comprehensive documentation understanding of the codebase and functionalities. <br> In the end of this document anyone with basic knowledge will be able to use the website freely and with no issues as the website is accessible to the public. </p>
+        </section>
+        <section>
+            <h1>Application’s Objectives</h1>
+            <p>The idea is to provide the user with real-time data about the crypto market, as we know that the crypto market is volatile and the traders/investors who are interested in cryptocurrency prices and want to stay ahead of the market then they will need a website to check the crypto prices in real live-time. <br> The website provides the following: </p>
+            <ol>
+                <li> Fear and Greed index of the whole crypto market indicates if the majority of the traders are buying or selling, the index is calculated from 0 to 100. Zero means "Extreme Fear", while 100 means "Extreme Greed"</li>
+                <li>The ID number retrieval for any cryptocurrency that exists in the crypto market, the API will retrieve the ID number of the cryptocurrency, and the reason for this is because the smaller the ID number of the cryptocurrency the more data about the prices of the currency that we have.</li>
+                <li>The retrieval of the following a. Symbol of the currency b. ID c. Price (US-Dollar) d. 24h Volume (US-Dollar) e. Market Capitalization (US-Dollar) f. Percent Change (1h) g. Percent Change (24h) h. Percent Change (7d) <br>This is extremely important if the user wants to know the volatile price of some specific currencies.</li>
+            </ol>
+        </section>
+        <section>
+            <h1>Research-Contested</h1>
+            <p> The APIs for cryptocurrencies are insanely everywhere because most of the currencies are volatile in their prices, but most of the API providers have their advantages and disadvantages, I figured this out by doing research <a href="https://medium.com/coinmonks/best-crypto-apis-for-developers-5efe3a597a9f" style="color:rgb(0, 255, 68)">here</a> and <a href="https://www.techopedia.com/the-10-best-cryptocurrency-apis-for-developers" style="color:rgb(0, 255, 68)">here</a>. For example; I wanted to use Binance API but when I found out that there was a ban if I overused it <br>
+            <h6>&nbsp;</h6>
+            <!--Space--> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/Binance%20API%20ban%20limits.png?raw=true" /> <br>
+            <h6>&nbsp;</h6>
+            <!--Space--> then I switched to <a href="https://alternative.me/crypto/api/#google_vignette" style="color:rgb(0, 255, 68)">alternative.me</a> as I know myself I will keep testing my website and eventually I will exceed the requests and will be banned. </p>
+        </section>
+        <section>
+        <h1>Getting Started</h1>
+            <ol>
+                <li>
+                    <h3>Home-Page</h3>
+                    <p>The landing page is the home page. If the (fetch fear and greed index) button is clicked the data will be retrieved to the user </p> <br>
+                    <h6>&nbsp;</h6>
+                    <!--Space--> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/getting%20started%20home%20page.png?raw=true" style="width:75%; padding-left:12.5%; width:50%; height:50%;" /> <br>
+                    <h6>&nbsp;</h6>
+                    <!--Space-->
+                    <p>When clicked on (show fear index) or (show greed index), an image will pop up showing the index.</p>
+                    <div style="display:flex; width:50%; height:50%;"> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/Fear%20index%20home%20page.png?raw=true" style="width:50%; height:50%;" /> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/greed%20index%20home%20page.png?raw=true" style="width:50%; height:50%;" /> </div>
+                    <h6>&nbsp;</h6>
+                    <!--Space--> <span><strong>Home page API explained</strong></span> <br> The fear and greed index is to give you a better understanding of the current market sentiment and to help to make more informed decisions. The index is calculated from 0 to 100. Zero means "Extreme Fear", while 100 means "Extreme Greed". The index is updated every hour. The index on this website is calculated from the following API : <a href="https://api.alternative.me/fng/" style="color:rgb(0, 255, 68)">https://api.alternative.me/fng/</a> <br> The images of fear and greed index are available also and the are taken from the same website using this API : <br> Fear Index Image API : <a href="https://alternative.me/images/fng/crypto-fear-and-greed-index-2020-5-13.png" style="color:rgb(0, 255, 68)">https://alternative.me/images/fng/crypto-fear-and-greed-index-2020-5-13.png</a> <br> Greed Index Image API : <a href="https://alternative.me/crypto/fear-and-greed-index.png" style="color:rgb(0, 255, 68)">https://alternative.me/images/fng/crypto-fear-and-greed-index-2020-5-13.png</a> <br> The crypto fear and greed index help to know where the crypto market standing in real time. info about the API : <br> API: <span style="color:rgb(0, 255, 68)">https://api.alternative.me/</span> <br> Endpoint: /fng/ <br> Method: GET <br> Description: Get the latest data of the Fear and Greed Index. <br> Optional Parameters: <br> limit, [int]: Limit the number of returned results. The default value is '1', use '0' for all available data. <br> JSON format response is like this : <br>
+                    <pre>
+                            {
+                                "name": "Fear and Greed Index",
+                                "data": [
+                                    {
+                                        "value": "40",
+                                        "value_classification": "Fear",
+                                        "timestamp": "1551157200",
+                                        "time_until_update": "68499"
+                                    },
+                                    {
+                                        "value": "47",
+                                        "value_classification": "Neutral",
+                                        "timestamp": "1551070800"
+                                    }
+                                ],
+                                "metadata": {
+                                    "error": null
+                                }
+                            }
+                        </pre>
+                </li>
+                <li>
+                    <h3>Listing-Page</h3>
+                    <p>When user enters the name of the cryptocurrency all the cryptocurrencies that have the same name in them will show up in plain text and on the bar-chart. For example, if the user enters Bitcoin even Orbitcoin will show because it has the Bitcoin keyword in its name. <br> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/Listings.png?raw=true" style="width:75%; padding-left:12.5%; width:50%; height:50%;" /> </p>
+                    <h6>&nbsp;</h6>
+                    <!--Space-->
+                    <div>
+                        <h4><strong>Possible scenarios:</strong></h4>
+                        <ul>
+                            <li>If the user enters nothing in the field, then this alert will show.</li> <br>
+                            <h6>&nbsp;</h6>
+                            <!--Space--> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/Listings%20page%20field%20empty.png?raw=true" style="width:50%; height:50%;" /> <br>
+                            <h6>&nbsp;</h6>
+                            <!--Space-->
+                            <li>If the user enters something in the field that doesn’t exist, then this will show.</li> <br> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/Listings%20page%20name%20doesnot%20exist.png?raw=true" style="width:50%; height:50%;" /> <br>
+                            <h6>&nbsp;</h6>
+                            <!--Space-->
+                        </ul>
+                    </div> <span><strong>Listings page API explained</strong></span> <br> The simple description of listings API is an overview of all accessible crypto currencies; <br> When click on (Fetch Crypto Data) button all the available crypto that been listed with their IDs will be retrieved and a chart will be generated to show the available crypto and their IDs accordingly, the chart is then displayed in the same page. <br> Retrieving the data in a chart can be use for the user to check listings IDs of the cryptocurrencies.<br> info about the API : <br> Endpoint: /listings/<br> Method: GET<br> Description: Overview of all available crypto currencies, use the returned ID.<br> The URL: <a href="https://api.alternative.me/v2/listings/" style="color:rgb(0, 255, 68)">https://api.alternative.me/v2/listings/</a> <br> JSON format response should be like this : <br>
+                    <pre>
+                            {
+                                "data": [
+                                    {
+                                        "id": "1",
+                                        "name": "Bitcoin",
+                                        "symbol": "BTC",
+                                        "website_slug": "bitcoin"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "name": "Litecoin",
+                                        "symbol": "LTC",
+                                        "website_slug": "litecoin"
+                                    },
+                                    // ... (more cryptocurrency entries)
+                                ],
+                                "metadata": {
+                                    "timestamp": 1537430627,
+                                    "num_cryptocurrencies": 935,
+                                    "error": null
+                                }
+                            }
+                        </pre> <br> The output should look like this if the user enters (bitcoin) in the text field <br>
+                    <h6>&nbsp;</h6>
+                    <!--Space--> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/Listings.png?raw=true" style="width:50%; height:50%;" />
+                </li>
+                <li>
+                    <h3>Ticker-Page</h3>
+                    <p>When the user enters the symbol of the cryptocurrency the following data of the cryptocurrency will be tabulated for the user. The retrieval of the following a. Symbol of the currency b. ID c. Price (US-Dollar) d. 24h Volume (US-Dollar) e. Market Capitalization (US-Dollar) f. Percent Change (1h) g. Percent Change (24h) h. Percent Change (7d) i. Last Updated </p>
+                    <div>
+                        <h4><strong>Possible scenarios:</strong></h4>
+                        <ul>
+                            <li>If the user enters nothing in the field, then this will pop up.</li> <br>
+                            <h6>&nbsp;</h6>
+                            <!--Space--> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/ticker%20page%20field%20empty.png?raw=true" style="width:50%; height:50%;" /> <br>
+                            <h6>&nbsp;</h6>
+                            <!--Space-->
+                            <li>If the user enters data that doesn’t exist, then this will pop up.</li> <br> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/ticker%20page%20symobl%20does%20not%20exist.png?raw=true" style="width:50%; height:50%;" /> <br>
+                            <h6>&nbsp;</h6>
+                            <!--Space-->
+                        </ul> <strong>Note: in all of the pages above any kind of data retrieval is done with no console error at all.</strong>
+                    </div>
+                    <h6>&nbsp;</h6>
+                    <!--Space-->
+                    <span><strong>Ticker page API explained</strong></span><br>The text field for user input accepts multiple data from the user, for example; if the user wants to know the data of a specific coins the user simply enters the symbols of the coins separated by space and the data will be retrieved and displayed with bar chart and also in tabulated data as a table will be created. <br> if the user enters BTC XRP NEAR SOL the data of these coins will be retrieved and displayed on bar chart and also as a table. <br> this should be shown <br>
+                    <h6>&nbsp;</h6>
+                    <!--Space--> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/TickerTable.png?raw=true" style="width:50%; height:50%;" />
+                    <h6>&nbsp;</h6>
+                    <!--Space--> That's how the chart looks like <br> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/TickerChart.png?raw=true" style="width:50%; height:50%;" /> <br>
+                    <h6>&nbsp;</h6>
+                    <!--Space--> info about the API : <br> Endpoint: /ticker/<br> Method: GET<br> Description: Coin and token prices updated every 5 minutes.<br> The URL: <a href="https://api.alternative.me/v2/ticker/" style="color:rgb(0, 255, 68)">https://api.alternative.me/v2/ticker/</a><br> JSON format response should be like this : <br>
+                    <pre>
+                            {
+                                "data": [
+                                {
+                                    "id": 1,
+                                    "name": "Bitcoin",
+                                    "symbol": "BTC",
+                                    "website_slug": "bitcoin",
+                                    "rank": 1,
+                                    "circulating_supply": 17277612,
+                                    "total_supply": 17277612,
+                                    "max_supply": 21000000,
+                                    "quotes": {
+                                        "USD": {
+                                            "price": 6418.85820382,
+                                            "volume_24h": 4263700490.8,
+                                            "market_cap": 110902541529,
+                                            "percentage_change_1h": 0.1,
+                                            "percentage_change_24h": 0.84,
+                                            "percentage_change_7d": -0.23
+                                        },
+                                        "EUR": {
+                                            "price": 5490.04942172725,
+                                            "volume_24h": 3646743029.78124,
+                                            "market_cap": 94854943769.7537,
+                                            "percentage_change_1h": 0.1,
+                                            "percentage_change_24h": 0.84,
+                                            "percentage_change_7d": -0.23
+                                        }
+                                    },
+                                    "last_updated": 1537428143
+                                },
+                                ...
+                                ],
+                                "metadata": {
+                                "timestamp": 1537428090,
+                                "num_cryptocurrencies": 935,
+                                "error": null
+                                }
+                            }
+                        </pre>
+                </li>
+                <li>
+                    <h3>Documentation</h3>
+                    <p>In this page, I’m explaining about the following.</p>
+                    <ol>
+                        <li>What output is expected.</li>
+                        <li>What kind of inputs are required.</li>
+                        <li>What APIs the website is using to retrieve the data from.</li>
+                        <li>The structure of JSON files that the data retrieved and manipulated.</li>
+                    </ol>
+                    <p>Note: In all of the pages above, any kind of data retrieval is done with no console error at all.</p>
+                    <p>Note: the documentation page is this page you are reading from right now.</p>
+                </li>
+            </ol>
+        </section>
+        <h1>Development process </h1>
+        <ol>
+            <li>
+                <h3>backendAPI.js Functions</h3>
+                A. Function 1: Fetching Data for Fear and Greed Index
+                <p>Description: Asynchronous function (loadFearAndGreedData) designed to fetch fear and greed index data from a specified API.</p>
+                <p>How It Works:</p>
+                <ol>
+                    <li>Uses the fetch function to request data from the settled URL.</li>
+                    <li>Parses the JSON response from the API.</li>
+                    <li>Dynamically generates HTML content to display fear and greed index information.</li>
+                </ol>
+                <p>Expected Results: Populates the designated HTML element (fearAndGreedDiv) with fear and greed index details.</p>
+                <h6>&nbsp;</h6><!--Space-->
+                B. Function 2: Fetching Data by Listings API with Bar-Chart
+                <p>Description: Asynchronous function (loadCryptoData) responsible for fetching cryptocurrency data from a server-side and rendering it with a bar-chart.</p>
+                <p>How It Works:</p>
+                <ol>
+                    <li>Retrieves user input from the search bar.</li>
+                    <li>Fetches cryptocurrency data from the server.</li>
+                    <li>Filters and displays relevant data based on the user input.</li>
+                    <li>Dynamically creates a bar-chart using the Chart.js library here.</li>
+                </ol>
+                <p>Expected Results: Displays cryptocurrency information and generates a bar-chart based on user input.</p>
+                <h6>&nbsp;</h6><!--Space-->
+                C. Function 3: Fetch, Load, and Display Ticker Data with Bar-Chart
+                <p>Description: Asynchronous function (loadTickerData) designed to fetch and display ticker data along with a bar chart.</p>
+                <p>How It Works:</p>
+                <ol>
+                    <li>Retrieves user input from the search bar.</li>
+                    <li>Fetches ticker data from the server.</li>
+                    <li>Processes and displays the data in a table format.</li>
+                    <li>Dynamically creates a bar-chart with logarithmic scaling using Chart.js.</li>
+                </ol>
+                <p>Expected Results: Presents ticker data in a table and generates a bar-chart based on user-specified symbols.</p>
+                <p>Notes:</p>
+                <ul>
+                    <li>I am using logarithmic scaling in Chart.js because there are cryptocurrencies with very low prices such as 0.00001038$ SHIBA at the time of writing this document and at the same time the price of BTC is around 42,000$. SHIBA cannot be seen next to BTC is they were rendered together, and that's the use of logarithmic scaling</li>
+                    <li>The development process prioritized asynchronous operations for smooth user interactions.</li>
+                    <li>Data is dynamically rendered in HTML elements.</li>
+                    <li>Error handling is implemented to address possible issues in fetching and processing data.</li>
+                    <li>You can access all the functions here <a href="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/backendAPI.js" style="color:rgb(0, 255, 68)"  >GitHub</a></li>
+                    <li>A test plan was conducted on the three function for API retrieval and the excel sheet can be seen here <a href="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/raw/main/WebDev%20API%20Test%20plan.xlsx" style="color:rgb(0, 255, 68)" >Testing Plan</a> </li>
+                </ul>
+                <p>Noting that all three methods are used to retrieve the data from the external server, and the JSON data is dynamically rendered to the webpage.</p>
+            </li>
+            <li>
+                <h3>main.js JavaScript Functions</h3>
+                a. Functions number 1, 8, and 9
+                <p>Functions to manipulate the elements for a better user experience.</p>
+                b. Function number 2
+                <p>Function for smooth scrolling and better user experience.</p>
+                c. Functions number 3, 4, and 5
+                <p>Functions for dark and light mode to enhance the website look by providing users with more than one choice.</p>
+                d. Function number 6
+                <p>Function for internet checking. If the user intends to retrieve data from an external server, a stable internet connection is required. This function informs the user if they have a stable internet connection or not. <br>
+                    <hr> <img src="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/imgs/internet%20check%20navigator.onLine.png?raw=true" style="width:50%; height:50%;" />
+                </p>
+            </li>
+            You can access all the functions here <a href="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2/blob/main/main.js" style="color:rgb(0, 255, 68)"  >GitHub</a>
+            <li>
+                <h3>Server.js</h3>
+                <p>a. <strong>Express Framework:</strong> The server is built using express.js, which simplifies route handling and HTTP creation.</p>
+                <p>b. <strong>Express Middleware:</strong> express.json() parses the incoming JSON object from the external server, making the data accessible in the req.body object.</p>
+                <p>c. <strong>CORS():</strong> Enables Cross-Origin Resources Sharing, allowing the server to handle requests from different origins.</p>
+                <p>d. <strong>Routes and External API Requests:</strong></p>
+                <ol>
+                    <li>Route 1: / (Index)<br> Returns a JSON response with a "tested! Index is working." message to check if the server is running.</li>
+                    <li>Route 2: /ticker<br> Asynchronously fetches data from the external API endpoint <a href="https://api.alternative.me/v1/ticker/" style="color:rgb(0, 255, 68)"  >https://api.alternative.me/v1/ticker/</a> using Axios. Responds with the retrieved JSON data or returns an error message in case of an issue.</li>
+                    <li>Route 3: /listings<br> Asynchronously fetches data from the external API endpoint <a href="https://api.alternative.me/v2/listings/" style="color:rgb(0, 255, 68)"  >https://api.alternative.me/v2/listings/</a> using Axios. Responds with the retrieved JSON data or returns an error message in case of an issue.</li>
+                    <li>Route 4: /documentation<br> Similar to the listings route.</li>
+                </ol>
+                <p><strong>Notes:</strong> The server is designed to handle asynchronous operations, ensuring non-blocking execution. Axios is used to simplify making HTTP requests to external APIs and handling responses. CORS middleware is essential for allowing cross-origin requests, and efforts are made to ensure the server provides a straightforward way to test its functionality and check if it's operational.</p>
+            </li>
+        </ol>
+        <section>
+            <h1>Technologies used</h1>
+            <ol>
+                <li>
+                    <h3>Express.js</h3>
+                    <p>A. Purpose: Framework for Node.js providing features to build the application.</p>
+                    <p>B. Usage: Used to handle routes for different endpoints ("/", "/ticker", "/listings", "/documentation"), enabling the server to respond with JSON data.</p>
+                </li>
+                <li>
+                    <h3>Axios</h3>
+                    <p>A. Purpose: According to Axios documentation, it’s useful for fetching data from an external webserver.</p>
+                    <p>B. Usage: Simplifies the process of making asynchronous HTTP requests to the external APIs:</p>
+                    <ul>
+                        <li><a href="https://api.alternative.me/v1/ticker/" style="color:rgb(0, 255, 68)">https://api.alternative.me/v1/ticker/</a> </li>
+                        <li><a href="https://api.alternative.me/v2/listings/" style="color:rgb(0, 255, 68)">https://api.alternative.me/v2/listings/</a> </li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>CROS</h3>
+                    <p>A. Purpose: Unauthorized access will be prevented.</p>
+                    <p>B. Usage: The job of CROS is to enable Cross-Origin HTTP requests from the client-side to the server. This is important to handle requests from different domains.</p>
+                </li>
+                <li>
+                    <h3>Node.js</h3>
+                    <p>A. Purpose: Allowing JavaScript server-side execution.</p>
+                    <p>B. Usage: The entire script is executed within the Node.js runtime and also handles HTTP requests.</p>
+                </li>
+                <li>
+                    <h3>JSON</h3>
+                    <p>A. Purpose: Lightweight data that is easy for humans to read.</p>
+                    <p>B. Usage: The server responds to the client with JSON data.</p>
+                </li>
+                <li>
+                    <h3>Port Configuration</h3>
+                    <p>A. Purpose: Defines the port number on which the server listens for incoming requests.</p>
+                    <p>B. Usage: The server listens on port 3000 (const port = 3000;).</p>
+                </li>
+                <li>
+                    <h3>Express.json()</h3>
+                    <p>A. Purpose: Middleware for parsing the incoming JSON requests, making the data accessible in the req.body object.</p>
+                </li>
+                <li>
+                    <h3>Express.use(CROS())</h3>
+                    <p>A. Purpose: Middleware for enabling cross-origin sharing, using this to allow the server to handle requests from the origin.</p>
+                </li>
+                <li>
+                    <h3>Chart.js:</h3>
+                    <p>Purpose: A JavaScript library for creating interactive and visually appealing charts.</p>
+                    <p>Usage: Included in the HTML file using the CDN link <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <a href="https://cdn.jsdelivr.net/npm/chart.js" style="color:rgb(0, 255, 68)"  >Chart.js</a> .</p>
+                    <p>Benefits: Allows to create alot of types of charts, including bar charts, line charts, and more. It enhances the visualization of data on the client side. in this website a bar chart is used only.</p>
+                </li>
+            </ol>
+        </section>
+        <h1>Advantages and disadvantages of the chosen technology</h1>
+        <table>
+            <tr>
+                <th>Technology</th>
+                <th>Advantages</th>
+                <th>Disadvantages</th>
+            </tr>
+            <tr>
+                <td>HTML and DOM Manipulation</td>
+                <td>- Facilitates dynamic updates to the content and structure of web pages.</td>
+                <td>- May lead to complex and less maintainable code, especially in larger projects like this one.</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>- Chart.js for visualization and node.js for server side execution.</td>
+                <td>- defining routes can be difficult</td>
+            </tr>
+            <tr>
+                <td>Asynchronous Programming (Async/Await)</td>
+                <td>- Allows handling asynchronous tasks without blocking the main thread.</td>
+                <td>- Requires careful error handling and may lead to callback hell if not structured properly.</td>
+            </tr>
+            <tr>
+                <td>Fetch API</td>
+                <td>- Provides a simple and modern interface for making asynchronous HTTP requests.</td>
+                <td>- Lack of built-in support for handling HTTP errors can require additional error-checking code.</td>
+            </tr>
+            <tr>
+                <td>JSON (JavaScript Object Notation)</td>
+                <td>- Lightweight data interchange format easy to read and write.</td>
+                <td>- Limited support for more complex data types compared to some other serialization formats.</td>
+            </tr>
+            <tr>
+                <td>Chart.js</td>
+                <td>- Easy-to-use library for creating interactive and visually appealing charts.</td>
+                <td>- May not be suitable for extremely complex or specialized charting requirements.</td>
+            </tr>
+            <tr>
+                <td>Error Handling (try-catch)</td>
+                <td>- Enhances code robustness by providing a mechanism to handle exceptions.</td>
+                <td>- Overuse of try-catch blocks can make it harder to identify and fix underlying issues.</td>
+            </tr>
+            <tr>
+                <td>Event Handling (Event Listeners)</td>
+                <td>- Enables response to user actions, enhancing interactivity.</td>
+                <td>- Events can add complexity to the code.</td>
+            </tr>
+            <tr>
+                <td>Conditional Statements</td>
+                <td>- control decision-making in the code.</td>
+                <td>- Nested conditional statements can lead to code that is difficult to understand.</td>
+            </tr>
+            <tr>
+                <td>String Manipulation</td>
+                <td>- Provides flexibility in constructing and manipulating strings.</td>
+                <td>- string concatenation can lead to inefficient string handling.</td>
+            </tr>
+            <tr>
+                <td>ES6 Features</td>
+                <td>- Introduces modern syntax and features for code improvements.</td>
+                <td>- Compatibility issues with older browsers may require transpilation or polyfills.</td>
+            </tr>
+            <tr>
+                <td>Node.js</td>
+                <td>- Single programming language (JavaScript) for both client and server-side, enhancing code consistency.</td>
+                <td>- Single-threaded nature might lead to blocking in resource-intensive operations. Node.js may not be suitable for CPU-bound tasks.</td>
+            </tr>
+            <tr>
+                <td>Express.js</td>
+                <td>- Lightweight and flexible web application framework, making it easy to build and scale applications.</td>
+                <td>- May lack some features available in larger frameworks.</td>
+            </tr>
+            <tr>
+                <td>Axios</td>
+                <td>- Promise-based, allowing asynchronous handling of HTTP requests.</td>
+                <td>- Additional dependency, although minimal.</td>
+            </tr>
+            <tr>
+                <td>CORS (Cross-Origin Resource Sharing)</td>
+                <td>- Enables cross-origin HTTP requests, which I think it is very important for web applications.</td>
+                <td>- Misconfiguration can lead to security vulnerabilities.</td>
+            </tr>
+            <tr>
+                <td>Express.json() Middleware</td>
+                <td>- Simplifies handling of incoming JSON requests.</td>
+                <td>- Overhead if not needed for the specific application.</td>
+            </tr>
+            <tr>
+                <td>Express.use(cors()) Middleware</td>
+                <td>- Enables cross-origin resource sharing for the Express application.</td>
+                <td>- Misuse may lead to security vulnerabilities.</td>
+            </tr>
+            <tr>
+                <td>Port Configuration (Port 3000)</td>
+                <td>- Defines the port for the server to listen on.</td>
+                <td>- Port conflicts if another application is using the same port.</td>
+            </tr>
+        </table>
+        <section>
+            <h1>Application Features</h1>
+            <ol>
+                <li>
+                    <h3>Node.js Usage</h3>
+                    <p>The website is using Node.js for server-side JavaScript code execution.</p>
+                </li>
+                <li>
+                    <h3>Express.js for Route Handling</h3>
+                    <p>Express.js is used to handle the routes and to respond to different endpoints.</p>
+                </li>
+                <li>
+                    <h3>External API Integration</h3>
+                    <p>axios is used to make HTTP requests to external APIs:</p>
+                    <ul>
+                        <li>a. <a href="https://api.alternative.me/v1/ticker/" target="_blank" style="color:rgb(0, 255, 68)">https://api.alternative.me/v1/ticker/</a> for fetching ticker data.</li>
+                        <li>b. <a href="https://api.alternative.me/v2/listings/" target="_blank" style="color:rgb(0, 255, 68)">https://api.alternative.me/v2/listings/</a> for retrieving cryptocurrency listings.</li>
+                    </ul>
+                </li>
+                <li>
+                    <h3>Data Presentation</h3>
+                    <p>The JSON format received from the external server is manipulated to present it to the user. Different routes are available for obtaining general information ("/"), ticker data ("/ticker"), cryptocurrency listings ("/listings"), and additional information ("/documentation").</p>
+                </li>
+                <li>
+                    <h3>Fear and Greed Index Display</h3>
+                    <p>There's a function (loadFearAndGreedData) dedicated to fetching and displaying data related to the fear and greed index. The data is presented in an HTML div.</p>
+                </li>
+                <li>
+                    <h3>Cryptocurrency Listings and Bar Chart</h3>
+                    <p>(loadCryptoData) fetches cryptocurrency listings from the external API ("/listings") and displays relevant information in an HTML div. Then a bar-chart is generated using Chart.js, displaying crypto IDs based on user input.</p>
+                </li>
+                <li>
+                    <h3>Ticker Data and Bar Chart</h3>
+                    <p>A third function (loadTickerData) retrieves ticker data from the external API ("/ticker") based on user input. The data is displayed in an HTML table, and a barchart is generated using Chart.js.</p>
+                </li>
+                <li>
+                    <h3>User Input Handling</h3>
+                    <p>The application handles user input, validating and processing it to retrieve relevant cryptocurrency data. Alerts are used to notify users of input errors or when no data is found for the entered symbols.</p>
+                </li>
+                <li>
+                    <h3>Port Configuration</h3>
+                    <p>The server listens on port 3000, as specified by the const port = 3000; configuration.</p>
+                </li>
+                <li>
+                    <h3>Error Handling</h3>
+                    <p>The application includes error handling mechanisms for situations where data cannot be fetched from external APIs or there are issues with the server.</p>
+                </li>
+            </ol>
+        </section>
+        <h1>Its user interface design and visualizations</h1>
+        <p> for the design side, I tried to manipulate the user interface by using multiple javascript functions such as scrollbox function along sided with smooth scrolling function, the color picker HTML was used to select best colors possibile. dark and light mode was fixed to the user preference. <br> for the visualization side, I used chart.js to generate the charts and the charts are generated based on the user input, providing a clean and interactive way to represent data. <br> CSS styling was implemented by using open sources libraries such as <a href="https://animista.net/play/background/ken-burns/kenburns-top" style="color:rgb(0, 255, 68)">animista.net</a> and also <a href="https://uiverse.io/all" style="color:rgb(0, 255, 68)">uiverse.io</a> knowing that there are multiple ready templates of styling that are really interesting and useful, I have used them in this website for better design </p>
+        <h1>How to make use of the application itself</h1> The application is already in use by me and my friends who are interested about the crypto market, the application is designed to be used by anyone who is interested in the crypto market and want to stay ahead of the market by knowing the prices of the cryptocurrencies in real time. <br>
+        <ol>
+            <li> Knowing the fear and greed index of the whole crypto market. </li>
+            <li> Knowing the IDs of any crypto currency that are listed in the crypto market </li>
+            <li> The Price in USD for any crypto currency that is listed in the crypto market </li>
+            <li> 24h Volume in USD for any crypto currency that is listed in the crypto market </li>
+            <li> Market Cap USD for any crypto currency that is listed in the crypto market </li>
+            <li> Percent Change of (1h) for any crypto currency that is listed in the crypto market </li>
+            <li> Percent Change of (24h) for any crypto currency that is listed in the crypto market </li>
+            <li> Percent Change of (7d) for any crypto currency that is listed in the crypto market </li>
+        </ol>
+        <h1>GitHub</h1> The project was committed to GitHub to repo named <a href="https://github.com/EskandarAtrakchi/WebDev-NCI-YEAR-2-FIRST-project-2" style="color:rgb(0, 255, 68)">WebDev-NCI-YEAR-2-FIRST-project-2</a> under user name <a href="https://github.com/EskandarAtrakchi" style="color:rgb(0, 255, 68)">EskandarAtrakchi</a>, the project is public and anyone can access it. <br> The project was committed on GitHub pages so anyone can access it to maximize the use of the application itself. <br> Changes that have been made to the project to be publicly available on GitHub pages are the following: <ol>
+            <li> The port of 3000 is not available as the previous port was <strong>const port = 3000;</strong> </li>
+            <li> The new port is <strong>const port = process.env.PORT || 3000;</strong> This means new port set up according to the environment variable if it exists because GitHub pages does not run on port 3000 </li>
+        </ol>
+        <h1>Conclusion</h1> In coclusion, the website is accessible online by anyone who is interested about the crypto market, prices, volume, market cap, and the fear and greed index of the whole crypto market. <br> The website was build using HTML, CSS, and JavaScript, the website is using Node.js for server-side JavaScript code execution, Express.js is used to handle the routes and to respond to different endpoints, axios is used to make HTTP requests to external APIs, and CORS is used to enable cross-origin sharing, using this to allow the server to handle requests from different origins. <br> The website is using Chart.js to generate the charts and the charts are generated based on the user input, providing a clean and interactive way to represent data. <br> The website is using JSON format to present the data to the user, and the JSON format received from the external server is manipulated to present it to the user. Different routes are available index-page ("/"), ticker data ("/ticker"), cryptocurrency listings ("/listings"), and Documentation ("/documentation").
+        <br>
+        The designing and CSS styling of the page was implemented from ready libraries that are useful and time saving.
+        <br>
+        The separation of javascript methods that putting one file named backendAPI.js that only focuses on retrieving the data and displaying them to the user with bar chart using Chart.js, and the other is main.js is for the frontend mainly and any other requirements that are not related to APIs.
+        <br>
+
+
+        <hr>
+
+        <br>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EuKHmt0xgec?si=4omICwm11QrTHjad" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- ends here -->
+        <hr>
+        <h6>&nbsp;</h6>
+        <!--Space-->
+    </div> <!-- Footer section -->
+    <footer>
+        <div>
+            <!--Social media icons -->
+            <ul style="display: flex;"> <a href="https://www.facebook.com" style="padding: 3%; padding-left: 38.555555%; color: aqua;"> <svg xmlns="http://www.w3.org/2000/svg" class="iconsblog" id="fb-ico" width="2rem" height="2rem" fill="currentColor" viewBox="0 0 16  16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                    </svg> </a> <br /> <a href="https://www.linkedin.com" style="padding: 3%; color: aqua;"> <svg xmlns="http://www.w3.org/2000/svg" class="iconsblog" id="li-ico" width="2rem" height="2rem" fill="currentColor" viewBox="0 0 16  16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                    </svg> </a> <br /> <a href="https://www.twitter.com" style="padding: 3%; color: aqua;"> <svg xmlns="http://www.w3.org/2000/svg" class="iconsblog" id="tw-ico" width="2rem" height="2rem" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                    </svg> </a> </ul>
+        </div>
+        <p style="color: aqua;"> &copy; 2023 IT company for real crypto prices in time <br /> Developing, maintaining, and updating a real prices and much more for web application by <strong>Eskandar Atrakchi</strong> </p>
+    </footer>
+    <!--Arrow to go up --> <a href="#top">
+        <h1 style="float: right;"><img src="https://archive.org/download/arrowup/arrowup.gif" style="width: 13%; height: 33%; float: right;" alt="IMG-HERE" /></h1>
+    </a>
+</body>
+
+</html>
