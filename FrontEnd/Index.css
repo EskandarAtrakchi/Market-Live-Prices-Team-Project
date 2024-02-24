@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(50, 47, 47);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1{
+    color: #d7fd00;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #52504b;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #fdf47a;
+}
+
+header{
+    background-color:#000000
+}
+
+main {
+    flex-grow: 1;
+    max-width: 1000px; /* Adjust the width as needed */
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 20px;
+    width: 100%; /* Set the width to 100% */
+    max-width: 100%; /* Ensure it spans the full width */
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #000000;
+    color: #fff;
+} 
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+/* Instagram */
+.fa-instagram {
+    background: #921689;
+    color: white;
+  }
+
+  .left-content {
+    display: flex;
+    align-items: center;
+}
+
+.title img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+marquee{
+  color: #fff;
+
+}
+
+input{
+  width: 700px;
+  height: 40px;
+}
