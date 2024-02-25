@@ -12,8 +12,8 @@ const messageInput = document.getElementById('messageInput');
 //prompting the user to enter their name and stores it in the 'name' variable.
 const name = prompt('Enter your name to Join');
 
-//checking if the entered name is either null or has a length less than or equal to 3 characters. 
-if (name === null || name.length <= 3) {
+//checking if the entered name is either null or has a length less than or equal to 1 character. 
+if (name === null || name.length <= 1) {
     //it creates an h1 element with a message indicating denied access, removeing the chatBox from the document, appends the h1 element to the body
     const h1Element = document.createElement('h1');
     h1Element.classList.add('noAccess');
