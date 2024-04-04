@@ -23,14 +23,14 @@ app.use(express.json());
 app.use(cors());
  
 //route number one index (home page) 
-app.get('/index.html', (req, res) => {
+app.get('/', (req, res) => {
     //just to see if the server is running
     res.json({ message: 'tested! working.' });
     console.log(res.json());
 });
 
 // route number two ticker for yonas 
-app.get('https://eskandaratrakchi.github.io/WebDev-project-2-NCI-Year-2/ticker.html', async (req, res) => {
+app.get('/ticker.html', async (req, res) => {
     try {
         //wait for axios to get the API response 
         const response = await axios.get('https://api.alternative.me/v1/ticker/');
