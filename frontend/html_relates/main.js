@@ -97,6 +97,10 @@ function scrollBoxForFeedbackPage() {
 
 //===================================
 
+//function number 4 darkMode for color blind needs 
+
+//===================================
+
 function darkMode() {
     const toggleBtn = document.getElementById("toggleBtn");
     const body = document.body;
@@ -118,18 +122,28 @@ function darkMode() {
     });
 }
 
-function checkingInternetStatus () {
+//end color blind function here 
 
+//===================================
+
+//function number 5 checking internet status
+
+//===================================
+
+function checkingInternetStatus () {
+    //if the user is not connected to the internet
     if (navigator.onLine == false) {
 
         alert('You are offline!');
 
-    } else if (navigator.onLine == true) {
+    } else if (navigator.onLine == true) {//else if
 
         alert('You are online!');
 
-    } else {
+    } else {//otherwise in all conditions
         alert ('Cannot detect if you are online or offline!');
     }
 
 }
+
+//end checking internet status function here
