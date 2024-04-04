@@ -30,7 +30,7 @@ app.get('/index.html', (req, res) => {
 });
 
 // route number two ticker for yonas 
-app.get('/ticker.html', async (req, res) => {
+app.get('https://eskandaratrakchi.github.io/WebDev-project-2-NCI-Year-2/ticker.html', async (req, res) => {
     try {
         //wait for axios to get the API response 
         const response = await axios.get('https://api.alternative.me/v1/ticker/');
