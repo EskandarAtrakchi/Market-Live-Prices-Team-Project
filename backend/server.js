@@ -21,7 +21,7 @@ const port = process.env.PORT || 3001;// new port set up according to the enviro
 
 app.use(express.json());
 app.use(cors());
- 
+
 //route number one index (home page) 
 app.get('/', (req, res) => {
     //just to see if the server is running
