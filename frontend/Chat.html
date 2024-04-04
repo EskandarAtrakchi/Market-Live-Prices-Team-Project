@@ -13,6 +13,17 @@
     <!--linking the css styling sheet here -->
     <link rel="stylesheet" href="html_relates/ChatStyle.css" />
     <link rel="stylesheet" href="html_relates/settings_style.css" />
+
+    <!-- linking the fontawesome here -->
+    <script defer src="https://kit.fontawesome.com/42eae9eadc.js" crossorigin="anonymous"></script>
+
+    <!-- linking the socket.io here -->
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+
+    <!-- linking the js here for frontend -->
+    <!-- keep it named as client to match the naming with the backend -->
+    <script defer src="./client.js"></script>
+    
     <!--calling main.js here -->
     <script src="html_relates/main.js" ></script>
 </head>
@@ -54,7 +65,7 @@
         <div class="container-chat">
             <div class="chatContainer" id="chatContainer">
                 <div class="chatHead">
-                    <p>Programmer's Group</p>
+                    <p>Public Chat</p>
                     <div class="usersCount">
                         <i class="fa-solid fa-user"></i>
                         <span id="onUsers">0</span>
