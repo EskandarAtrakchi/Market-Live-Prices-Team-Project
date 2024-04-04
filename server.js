@@ -23,14 +23,14 @@ app.use(express.json());
 app.use(cors());
  
 //route number one index (home page) 
-app.get('/', (req, res) => {
+app.get('/index.html', (req, res) => {
     //just to see if the server is running
     res.json({ message: 'tested! working.' });
     console.log(res.json());
 });
 
 // route number two ticker for yonas 
-app.get('/ticker', async (req, res) => {
+app.get('/ticker.html', async (req, res) => {
     try {
         //wait for axios to get the API response 
         const response = await axios.get('https://api.alternative.me/v1/ticker/');
@@ -44,7 +44,7 @@ app.get('/ticker', async (req, res) => {
 });
 
 //route number three listings for joshua 
-app.get('/listings', async (req, res) => {
+app.get('/listings.html', async (req, res) => {
     try {
         //wait for axios to get the API response 
         const response = await axios.get('https://api.alternative.me/v2/listings/');
@@ -58,7 +58,7 @@ app.get('/listings', async (req, res) => {
 });
 
 //route number three feedback for Eskadnar 
-app.get('/feedback', async (req, res) => {
+app.get('/feedback.html', async (req, res) => {
     try {
         //wait for axios to get the API response 
         res.json({ message: 'tested! feedback is working.' });
