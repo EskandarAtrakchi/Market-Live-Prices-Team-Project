@@ -18,10 +18,15 @@
     <script defer src="https://kit.fontawesome.com/42eae9eadc.js" crossorigin="anonymous"></script>
 
     <!-- linking the socket.io here -->
-    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+     <!--Website: https://www.srihash.org/ Encryption: SHA-384-->
+
+    <script src="https://cdn.socket.io/4.3.2/socket.io.min.js" integrity="sha384-toS6mmwu70G0fw54EGlWWeA4z3dyJ+dlXBtSURSKN4vyRFOcxd3Bzjj/AoOwY+Rg" crossorigin="anonymous"></script>
+    
+    <!--This line to make the browser able to use module and turn client.js to useable js -->
+    <script type="module" src="client.js"></script>
 
     <!-- linking the js here for frontend -->
-    <!-- keep it named as client to match the naming with the backend -->
+    <!-- keep it named as client to match the naming with the frontend -->
     <script defer src="./client.js"></script>
 
     <!--calling main.js here -->
