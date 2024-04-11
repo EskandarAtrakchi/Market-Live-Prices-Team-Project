@@ -367,9 +367,9 @@ async function loadTickerData() {
 
             //to achieve retrieving data successfully I need to 
             /*
-            1. Iterates over an array of symbols.
-            2. Filters data array to find objects where the lowercase symbol property matches the current symbol.
-            3. Stores the filtered data in the filteredData variable for each symbol.
+            1. Iterates over an array of `symbols`.
+            2. Filters `data` array to find objects where the lowercase `symbol` property matches the current `symbol`.
+            3. Stores the filtered data in the `filteredData` variable for each symbol.
             */
             symbols.forEach(symbol => {
                 const filteredData = data.filter(crypto => crypto.symbol.toLowerCase() === symbol);
@@ -396,12 +396,12 @@ async function loadTickerData() {
                     table.appendChild(row);
                 } else {//otherwise 
                     //there is no symbol that matches the user input
-                    alert(No data found for ${symbol});
+                    alert(`No data found for ${symbol}`);
                     // Create a table row for no data found
                     const noDataRow = table.insertRow();
                     const noDataCell = noDataRow.insertCell(0);
                     noDataCell.colSpan = 10;
-                    noDataCell.innerHTML = No data found for ${symbol};
+                    noDataCell.innerHTML = `No data found for ${symbol}`;
                 }
             });
 
@@ -426,7 +426,7 @@ async function loadTickerData() {
                     datasets: symbols.map(symbol => {
                         const filteredData = data.filter(crypto => crypto.symbol.toLowerCase() === symbol);
                         return {
-                            label: ${symbol} Price (USD),
+                            label: `${symbol} Price (USD)`,
                             data: filteredData.length > 0 ? [parseFloat(filteredData[0].price_usd)] : [0],
                             backgroundColor: 'rgba(75, 192, 192, 0.7)',
                             borderColor: 'rgba(75, 192, 192, 1)',
@@ -446,7 +446,6 @@ async function loadTickerData() {
             });
         } catch (error) {
             alert('Error fetching data: ' + error.toString());
-        }
-    }
+        }
+    }
 }
-
