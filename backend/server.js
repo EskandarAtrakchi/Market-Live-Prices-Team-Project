@@ -47,7 +47,7 @@ app.get('/ticker', async (req, res) => {
 app.get('/listings', async (req, res) => {
     try {
         //wait for axios to get the API response 
-        const response = await axios.get('https://api.alternative.me/v2/listings/');
+        const response = await axios.get('https://backend-api-server-tbrq.onrender.com/listings.html');
         const responseData = response.data;
 
         res.json(responseData);

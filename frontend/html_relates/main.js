@@ -236,7 +236,7 @@ async function loadCryptoData() {
     } else {//otherwise 
         try {
             // Fetch data from server-side proxy
-            const response = await fetch('http://localhost:3001/listings/');
+            const response = await fetch('https://backend-api-server-tbrq.onrender.com/listings.html');
             const data = await response.json();//await for the data JSON format 
 
             // Process and display data as needed
