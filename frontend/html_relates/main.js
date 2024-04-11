@@ -449,3 +449,4 @@ async function loadTickerData() {
         }
     }
 }
+
