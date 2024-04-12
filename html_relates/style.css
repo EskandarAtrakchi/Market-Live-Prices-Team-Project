@@ -72,6 +72,10 @@
     margin-left: 10px;
 }
 
+.button[type="submit"] {
+    background-color: #28a745;
+}
+
 /* Style for the file upload form */
 .file-upload-form {
     max-width: 400px;
