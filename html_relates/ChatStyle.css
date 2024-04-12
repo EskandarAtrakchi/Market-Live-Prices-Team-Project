@@ -297,20 +297,6 @@
   align-self: flex-start;
 }
 
-.noAccess {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  font-family: 'Poppins';
-  color: rgb(255, 255, 255);
-  text-align: center;
-  text-align: center;
-  width: 100%;
-  font-size: 2rem;
-  box-sizing: border-box;
-  padding: 0 20px;
-}
-
 /* Only Add When Needed */
 .serverFull {
   position: absolute;

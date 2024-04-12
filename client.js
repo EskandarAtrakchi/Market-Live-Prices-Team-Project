@@ -37,12 +37,7 @@ const name = prompt('Enter your name to Join');
 
 //checking if the entered name is either null or has a length less than or equal to 1 character. 
 if (name === null || name.length <= 1) {
-    //it creates an h1 element with a message indicating denied access, removeing the chatBox from the document, appends the h1 element to the body
-    const h1Element = document.createElement('h1');
-    h1Element.classList.add('noAccess');
-    h1Element.innerText = 'Sorry, You are not Allowed to access the chat room. Please try again with a valid name.';
-    chatBox.remove();
-    body.append(h1Element);
+    alert('Sorry, You are not Allowed to access the chat room. Please try again with a valid name.');
     //alert saying 'Access Denied'. 
     alert('Access Denied');
 } else {
