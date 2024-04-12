@@ -67,12 +67,12 @@
     cursor: pointer;
 }
 
-.button[type="reset"] {
+.button reset {
     background-color: #ff1919;
     margin-left: 10px;
 }
 
-.button reset-submit {
+.button submit {
     background-color: #28a745;
 }
 
