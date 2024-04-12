@@ -1,5 +1,5 @@
 //importing io (input and output from socket server)
-//import io from 'https://cdn.skypack.dev/socket.io-client';
+import io from 'https://cdn.skypack.dev/socket.io-client';
 
 //establishing a Socket.IO connection to a server running at https://backend-chat-server.onrender.com
 //this server is running to connect with the backend that deployed on https://backend-chat-server.onrender.com
