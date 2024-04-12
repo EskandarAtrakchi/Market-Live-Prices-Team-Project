@@ -72,7 +72,7 @@
     margin-left: 10px;
 }
 
-.button[type="submit"] {
+.button reset-submit {
     background-color: #28a745;
 }
 
