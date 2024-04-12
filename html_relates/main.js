@@ -19,8 +19,6 @@ function feedbackPage() {
     hitCounting();
 }
 
-
-
 //===================================
 
 //function number 2 to limit the number of submitted feedback from the users
@@ -447,5 +445,22 @@ async function loadTickerData() {
         } catch (error) {
             alert('Error fetching data: ' + error.toString());
         }
+    }
+}
+
+function scrollToTop() {
+    // Scroll to the top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function alerting() {
+    const email = document.getElementById("email-1").value;
+    const message = document.getElementById("message-1").value;
+    const name = document.getElementById("name-1").value;
+    if (email == "" || email == null || email == null || email == "" || message == "" || message == null || message == null || message == "" || name == "" || name == null || name == null || name == "") {
+        alert("Please fill the fields with valid information.");
+    } else {
+        alert("Your message has been sent successfully");
+        scrollToTop();
     }
 }
