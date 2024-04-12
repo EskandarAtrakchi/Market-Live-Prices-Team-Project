@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+.nav-active-light {
+  color: #0cf12b !important;
+}
+
 .input-group {
   display: flex;
   justify-content: space-between;
