@@ -1,0 +1,54 @@
+/* Default table styles */
+#tickerDataDiv table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+/* Styles for table headers */
+#tickerDataDiv th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styles for table cells */
+#tickerDataDiv td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Media query for smaller devices */
+@media only screen and (max-width: 768px) {
+/* Ensure the container is scrollable */
+#tickerDataDiv {
+overflow-x: auto;
+-webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+}
+
+/* Ensure table cells wrap content */
+#tickerDataDiv th,
+#tickerDataDiv td {
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+}
+}
+button.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    width: 100%;
+    background-color:#0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 20px; /* Adjusted border-radius to make it round */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Styling the hover state of the button */
+button.btn:hover {
+    background-color: #007bff;
+}
