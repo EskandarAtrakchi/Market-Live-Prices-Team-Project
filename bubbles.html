@@ -25,15 +25,15 @@
                     width="40" height="40">
                 <span>Crypto</span>
             </a>
-            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
-                <span class="visually-hidden">Toggle navigation</span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navcol-1"
+                aria-controls="navcol-1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Chat.html">Chat</a></li>
-                    <li class="nav-item"><a class="nav-link nav-active-light" href="bubbles.html">Crypto Bubbles</a></li>
+                    <li class="nav-item"><a class="nav-link nav-active-light" href="bubbles.html">Crypto Bubbles</a>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="listings.html">Listings</a></li>
                     <li class="nav-item"><a class="nav-link" href="ticker.html">Ticker</a></li>
                     <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
@@ -43,12 +43,17 @@
         </div>
     </nav>
 
-    <iframe src="https://cryptobubbles.net" width="75%" height="1000px" style="border: none;"></iframe>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9">
+                <iframe src="https://cryptobubbles.net" width="100%" height="1000px" style="border: none;"></iframe>
+            </div>
+            <div class="col-lg-3">
+                <iframe src="Chat.html" height="750px" width="100%"></iframe>
+            </div>
+        </div>
+    </div>
 
-    <!--<div style="width: 25%; float: right; padding: 20px; box-sizing: border-box;">
-        <iframe src="Chat.html" height="750px" width="100%"></iframe>
-    </div>-->
-    
 
     <footer class="bg-dark">
         <div class="container py-4 py-lg-5">
@@ -136,8 +141,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
     <!-- Bubble Animation on Header-->
     <script src="finisher-header.es5.min.js" type="text/javascript"></script>
