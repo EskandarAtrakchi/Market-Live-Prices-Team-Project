@@ -13,16 +13,10 @@
     <link rel="stylesheet" href="html_relates/feedback_style.css" />
     <script src="html_relates/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        function onLoad() {
-            darkMode();
-            scrollBoxForFeedbackPage();
-        }
-    </script>
-</head>
-<body onload="onLoad ()">
     
-
+</head>
+<body onload="darkMode()">
+    
     <!--nav ends here -->
     <h1 style="text-align: center; font-size:smaller;">P<span id="DynamicTextForFeedbackPage"></span></h1>
     <div class="terminal-loader">
@@ -153,7 +147,7 @@
     <script src="assets/js/bold-and-dark.js"></script>
     <!-- Bubble Animation on Header-->
     <script src="finisher-header.es5.min.js" type="text/javascript"></script>
-    
+
     <!--This span to avoid the eventListener error on the page -->
     <span id="toggleBtn"></span>
 </body>
