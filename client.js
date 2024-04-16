@@ -40,7 +40,7 @@ if (name === null || name.length <= 1) {
     alert('Sorry, You are not Allowed to access the chat room. Please reload with a valid name.');
     //alert saying 'Access Denied'. 
     alert('Access Denied');
-    window.location.href = "index.html";
+    window.location.href = "feedback_framed.html";
 
 } else {
     //'Access Granted' and emits a 'new-user-joined' event with the user's name using the established Socket.IO connection.
