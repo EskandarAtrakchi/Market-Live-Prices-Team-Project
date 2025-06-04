@@ -13,7 +13,6 @@ export const metadata: Metadata = {
   icons: {
     icon: "https://cliply.co/wp-content/uploads/2021/02/372102230_BITCOIN_400px.gif",
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
