@@ -1,5 +1,6 @@
 // pages/api/crypto/fear-greed.ts
 import type { NextApiRequest, NextApiResponse } from 'next';
+export const dynamic = "force-dynamic"
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
   try {
