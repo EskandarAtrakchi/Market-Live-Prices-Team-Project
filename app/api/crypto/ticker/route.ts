@@ -1,5 +1,4 @@
-import { NextResponse } from "next/server";
-export const dynamic = "force-dynamic"
+import { NextResponse } from "next/server"
 
 export async function GET() {
   try {
@@ -9,18 +8,18 @@ export async function GET() {
         headers: {
           Accept: "application/json",
         },
-        next: { revalidate: 60 },
+        next: { revalidate: 60 }, // Cache for 1 minute
       },
-    );
+    )
 
     if (!response.ok) {
-      throw new Error("Failed to fetch crypto data");
+      throw new Error("Failed to fetch crypto data")
     }
 
-    const data = await response.json();
-    return NextResponse.json(data);
+    const data = await response.json()
+    return NextResponse.json(data)
   } catch (error) {
-    console.error("Error fetching crypto data:", error);
-    return NextResponse.json({ error: "Failed to fetch crypto data" }, { status: 500 });
+    console.error("Error fetching crypto data:", error)
+    return NextResponse.json({ error: "Failed to fetch crypto data" }, { status: 500 })
   }
 }

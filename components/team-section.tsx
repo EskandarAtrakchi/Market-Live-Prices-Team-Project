@@ -6,21 +6,21 @@ const teamMembers = [
     role: "Frontend Developer",
     description:
       "Frontend developer, managing the tickers page, retrieving real time data of crypto prices and show statistics using graph charts.",
-    image: "https://github.com/EskandarAtrakchi/Market-Live-Prices-Team-Project/blob/Eskandar-StudentNo.23137517/frontend/assets/img/team/yonas.jpeg?raw=true",
+    image: "/assets/img/team/yonas.jpeg",
   },
   {
     name: "Alex Maryus",
     role: "Frontend Developer",
     description:
       "Front end developer, developing frontend of chat page and contributor to frontend design of the main page.",
-    image: "https://github.com/EskandarAtrakchi/Market-Live-Prices-Team-Project/blob/Eskandar-StudentNo.23137517/frontend/assets/img/team/alex.jpeg?raw=true",
+    image: "/assets/img/team/alex.jpeg",
   },
   {
     name: "Joshua Tupas",
     role: "Integration Specialist",
     description:
       "Integrating with crypto bubbles, Fear & Greed Index and retrieval of Crypto ID and comparing them with interactive chart.",
-    image: "https://github.com/EskandarAtrakchi/Market-Live-Prices-Team-Project/blob/Eskandar-StudentNo.23137517/frontend/assets/img/team/joshua.jpeg?raw=true",
+    image: "/assets/img/team/joshua.jpeg",
   },
   {
     name: "Eskandar Atrakchi",
