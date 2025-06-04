@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Switch } from "@/components/ui/switch"
@@ -10,15 +10,22 @@ import { Moon, Sun, Wifi, WifiOff } from "lucide-react"
 
 export function SettingsPanel() {
   const { theme, setTheme } = useTheme()
-  const [isOnline, setIsOnline] = useState(navigator?.onLine ?? true)
+  const [isOnline, setIsOnline] = useState(true) // default to true initially
   const { toast } = useToast()
+
+  useEffect(() => {
+    // Access navigator only on client after mount
+    setIsOnline(navigator.onLine)
+  }, [])
 
   const checkConnection = () => {
     const online = navigator.onLine
     setIsOnline(online)
     toast({
       title: online ? "Connected" : "Disconnected",
-      description: online ? "Your internet connection is working properly." : "You appear to be offline.",
+      description: online
+        ? "Your internet connection is working properly."
+        : "You appear to be offline.",
       variant: online ? "default" : "destructive",
     })
   }
